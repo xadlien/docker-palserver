@@ -66,6 +66,7 @@ services:
      REGION: ""
      USE_AUTH: "True"
      BANLIST_URL: "https://api.palworldgame.com/api/banlist.txt"
+   restart: unless-stopped
    deploy:
      resources:
        limits:
